@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinCare Medical Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+    header {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #008080;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #008080;
+      color: white;
+    }
+    form label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #008080;
+      color: white;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #006666;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #008080;
+      color: white;
+      margin-top: 20px;
+    }
+    #ordersList {
+      margin-top: 20px;
+    }
+    #ordersList table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #ordersList th, #ordersList td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    #ordersList th {
+      background: #008080;
+      color: white;
+    }
+    .delete-btn {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .delete-btn:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SkinCare Medical Store</h1>
+    <nav>
+      <a href="#catalog">Products</a>
+      <a href="#order">Order</a>
+      <a href="#ordersList">My Orders</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Catalog Section -->
+  <section id="catalog">
+    <h2>Skin Care Medicines & Creams</h2>
+    <table>
+      <tr>
+        <th>Medicine / Cream</th>
+        <th>Price (₹)</th>
+        <th>Stock</th>
+      </tr>
+      <tr><td>Clobetasol Propionate Cream</td><td>₹120</td><td>50</td></tr>
+      <tr><td>Mupirocin Ointment</td><td>₹140</td><td>40</td></tr>
+      <tr><td>Ketoconazole Cream</td><td>₹110</td><td>35</td></tr>
+      <tr><td>Terbinafine Cream</td><td>₹150</td><td>30</td></tr>
+      <tr><td>Adapalene Gel</td><td>₹180</td><td>25</td></tr>
+      <tr><td>Tretinoin Cream</td><td>₹200</td><td>28</td></tr>
+      <tr><td>Hydrocortisone Cream</td><td>₹90</td><td>45</td></tr>
+      <tr><td>Clindamycin Gel</td><td>₹160</td><td>38</td></tr>
+      <tr><td>Metronidazole Gel</td><td>₹130</td><td>32</td></tr>
+      <tr><td>Fluticasone Cream</td><td>₹210</td><td>20</td></tr>
+      <tr><td>Calamine Lotion</td><td>₹80</td><td>60</td></tr>
+      <tr><td>Azelaic Acid Cream</td><td>₹250</td><td>15</td></tr>
+      <tr><td>Salicylic Acid Ointment</td><td>₹100</td><td>50</td></tr>
+      <tr><td>Coal Tar Ointment</td><td>₹170</td><td>22</td></tr>
+      <tr><td>Zinc Oxide Cream</td><td>₹90</td><td>55</td></tr>
+      <tr><td>Permethrin Cream</td><td>₹140</td><td>42</td></tr>
+      <tr><td>Urea Cream</td><td>₹160</td><td>27</td></tr>
+      <tr><td>Clotrimazole Cream</td><td>₹120</td><td>40</td></tr>
+      <tr><td>Fusidic Acid Cream</td><td>₹220</td><td>18</td></tr>
+      <tr><td>Emollient Moisturizing Cream</td><td>₹180</td><td>30</td></tr>
+      <tr><td>Isotretinoin Capsules</td><td>₹300</td><td>12</td></tr>
+      <tr><td>Betamethasone Cream</td><td>₹150</td><td>20</td></tr>
+      <tr><td>Diclofenac Gel</td><td>₹90</td><td>35</td></tr>
+      <tr><td>Silver Sulfadiazine Cream</td><td>₹200</td><td>25</td></tr>
+      <tr><td>Moisturizing Cream for Eczema</td><td>₹250</td><td>28</td></tr>
+      <tr><td>Luliconazole Cream</td><td>₹300</td><td>15</td></tr>
+      <tr><td>Pimecrolimus Cream</td><td>₹450</td><td>10</td></tr>
+    </table>
+  </section>
+
+  <!-- Order Section -->
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <label for="product">Product Name:</label>
+      <input type="text" id="product" placeholder="Enter product name" required>
+
+      <label for="qty">Quantity:</label>
+      <input type="number" id="qty" min="1" required>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <!-- Orders List -->
+  <section id="ordersList">
+    <h2>My Orders</h2>
+    <table id="ordersTable">
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: skincaremedstore@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: Pen, Raigad, Maharashtra</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SkinCare Medical Store. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const orderForm = document.getElementById("orderForm");
+    const ordersTable = document.getElementById("ordersTable");
+
+    // Load saved orders from localStorage
+    function loadOrders() {
+      const orders = JSON.parse(localStorage.getItem("orders")) || [];
+      orders.forEach((order, index) => addOrderToTable(order, index));
+    }
+
+    // Add order row in table
+    function addOrderToTable(order, index) {
+      const row = ordersTable.insertRow();
+      row.insertCell(0).textContent = order.product;
+      row.insertCell(1).textContent = order.qty;
+      row.insertCell(2).textContent = order.name;
+      row.insertCell(3).textContent = order.address;
+
+      // Delete button
+      const deleteCell = row.insertCell(4);
+      const delBtn = document.createElement("button");
+      delBtn.textContent = "Delete";
+      delBtn.className = "delete-btn";
+      delBtn.onclick = function() {
+        deleteOrder(index);
+      };
+      deleteCell.appendChild(delBtn);
+    }
+
+    // Save order in localStorage
+    orderForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const order = {
+        product: document.getElementById("product").value,
+        qty: document.getElementById("qty").value,
+        name: document.getElementById("name").value,
+        address: document.getElementById("address").value
+      };
+
+      let orders = JSON.parse(localStorage.getItem("orders")) || [];
+      orders.push(order);
+      localStorage.setItem("orders", JSON.stringify(orders));
+
+      // Refresh orders list
+      refreshOrders();
+      alert("✅ Order placed successfully!");
+      orderForm.reset();
+    });
+
+    // Delete order
+    function deleteOrder(index) {
+      let orders = JSON.parse(localStorage.getItem("orders")) || [];
+      orders.splice(index, 1); // remove by index
+      localStorage.setItem("orders", JSON.stringify(orders));
+      refreshOrders();
+    }
+
+    // Refresh order table
+    function refreshOrders() {
+      // Clear old rows except header
+      ordersTable.innerHTML = `
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Action</th>
+        </tr>`;
+      loadOrders();
+    }
+
+    // Load orders on page start
+    loadOrders();
+  </script>
+
+</body>
+</html>
+medicinestorewebsite.html
+Displaying medicinestorewebsite.html.
